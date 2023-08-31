@@ -1,18 +1,12 @@
 import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/profile-pic.png";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [navOpen, setNavOpen] = useState(false);
+  const toggleNav = () => setNavOpen(!navOpen);
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -31,12 +25,12 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+      <div onClick={toggleNav} className="md:hidden z-10">
+        {!navOpen ? <FaBars /> : <FaTimes />}
       </div>
 
       {/* Mobile */}
-      <ul
+      {/* <ul
         className={
           !nav
             ? "hidden"
@@ -48,7 +42,21 @@ const Navbar = () => {
         <li className="py-6 text-4xl">Skills</li>
         <li className="py-6 text-4xl">Work</li>
         <li className="py-6 text-4xl">Contact</li>
-      </ul>
+      </ul> */}
+
+      <div
+        className={`fixed top-0 right-0 w-3/4 h-full bg-[#29A38E] text-gray-300 transform ${
+          navOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform ease-in-out duration-300 md:hidden`}
+      >
+        <ul className="flex flex-col justify-center items-center h-full">
+          <li className="py-6 text-xl text-black">Home</li>
+          <li className="py-6 text-xl text-black">About</li>
+          <li className="py-6 text-xl text-black">Skills</li>
+          <li className="py-6 text-xl text-black">Work</li>
+          <li className="py-6 text-xl text-black">Contact</li>
+        </ul>
+      </div>
 
       {/* Social Icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
