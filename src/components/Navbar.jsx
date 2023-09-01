@@ -9,9 +9,13 @@ const Navbar = () => {
   const toggleNav = () => setNavOpen(!navOpen);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div className="h-[50px] w-[50px] border rounded-full">
-        {/* <img src={Logo} alt="Logo Image" className="" /> */}
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-[20px] bg-[#0a192f21] text-gray-300">
+      <div className="h-[50px] w-[50px] border rounded-full overflow-hidden">
+        <img
+          src={Logo}
+          alt="Logo Image"
+          className="h-full w-full object-cover"
+        />
       </div>
 
       {/* MENU */}
@@ -20,7 +24,7 @@ const Navbar = () => {
         <li>Home</li>
         <li>About</li>
         <li>Skills</li>
-        <li>Work</li>
+        <li>Projects</li>
         <li>Contact</li>
       </ul>
 
@@ -30,19 +34,6 @@ const Navbar = () => {
       </div>
 
       {/* Mobile */}
-      {/* <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
-        }
-      >
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About</li>
-        <li className="py-6 text-4xl">Skills</li>
-        <li className="py-6 text-4xl">Work</li>
-        <li className="py-6 text-4xl">Contact</li>
-      </ul> */}
 
       <div
         className={`fixed top-0 right-0 w-3/4 h-full bg-[#29A38E] text-gray-300 transform ${
@@ -50,11 +41,11 @@ const Navbar = () => {
         } transition-transform ease-in-out duration-300 md:hidden`}
       >
         <ul className="flex flex-col justify-center items-center h-full">
-          <li className="py-6 text-xl text-black">Home</li>
-          <li className="py-6 text-xl text-black">About</li>
-          <li className="py-6 text-xl text-black">Skills</li>
-          <li className="py-6 text-xl text-black">Work</li>
-          <li className="py-6 text-xl text-black">Contact</li>
+          <li className="py-6 text-xl text-black hover:text-white">Home</li>
+          <li className="py-6 text-xl text-black hover:text-white">About</li>
+          <li className="py-6 text-xl text-black hover:text-white">Skills</li>
+          <li className="py-6 text-xl text-black hover:text-white">Projects</li>
+          <li className="py-6 text-xl text-black hover:text-white">Contact</li>
         </ul>
       </div>
 
