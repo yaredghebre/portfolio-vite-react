@@ -1,8 +1,9 @@
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import { useState } from "react";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }

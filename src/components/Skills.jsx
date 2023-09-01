@@ -8,15 +8,18 @@ import Tailwind from "../assets/tailwind.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="bg-[#0a192f] text-gray-300 px-4">
+    <div
+      name="skills"
+      className="w-full h-screen bg-[#0a192f] text-gray-300 px-4"
+    >
       {/* Container */}
-      <div className="max-w-[1080px] mx-auto p4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1080px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-[#29A38E] sm:text-center">
-            Experience
+            Skills
           </p>
           <p className="py-4">
-            // These are some of the technologies I've used
+            // These are some of the technologies I've worked wtih
           </p>
         </div>
 
