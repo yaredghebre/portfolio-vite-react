@@ -225,7 +225,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0] px-3">
             <a
               className="flex justify-between items-center w-full text-black"
-              href="/"
+              href="mailto:yared2391@gmail.com"
             >
               Email
               <HiOutlineMail size={30} style={{ color: "black" }} />
@@ -235,7 +235,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#D0826F] px-3">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="src/assets/YG-CV.png"
             >
               CV
               <BsFillPersonLinesFill size={30} />
