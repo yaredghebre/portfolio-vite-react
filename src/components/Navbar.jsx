@@ -17,13 +17,15 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-[20px] bg-gray-700 text-gray-300">
-      <div className="h-[50px] w-[50px] border rounded-full overflow-hidden">
-        <img
-          src={Logo}
-          alt="Logo Image"
-          className="h-full w-full object-cover"
-        />
-      </div>
+      <Link to="home" smooth={true} offset={50} duration={500}>
+        <div className="h-[50px] w-[50px] border rounded-full overflow-hidden">
+          <img
+            src={Logo}
+            alt="Logo Image"
+            className="h-full w-full object-cover cursor-pointer"
+          />
+        </div>
+      </Link>
 
       {/* ----------- NAVBAR MENU --------- */}
 
