@@ -7,12 +7,10 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink] = useState("");
   const toggleNav = () => setNavOpen(!navOpen);
 
-  const handleLinkClick = (linkName) => {
-    setActiveLink(linkName);
-  };
+  const handleClick = () => setNavOpen(!navOpen);
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-[20px] bg-gray-700 text-gray-300">
@@ -34,7 +32,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             className={activeLink === "Home" ? "active-link" : ""}
-            onClick={() => handleLinkClick("Home")}
+            onClick={() => handleClick("Home")}
           >
             Home
           </Link>
@@ -48,7 +46,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             className={activeLink === "About" ? "active-link" : ""}
-            onClick={() => handleLinkClick("About")}
+            onClick={() => handleClick("About")}
           >
             About
           </Link>
@@ -62,7 +60,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             className={activeLink === "Skills" ? "active-link" : ""}
-            onClick={() => handleLinkClick("Skills")}
+            onClick={() => handleClick("Skills")}
           >
             Skills
           </Link>
@@ -76,7 +74,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             className={activeLink === "Projects" ? "active-link" : ""}
-            onClick={() => handleLinkClick("Projects")}
+            onClick={() => handleClick("Projects")}
           >
             Projects
           </Link>
@@ -90,7 +88,7 @@ const Navbar = () => {
             offset={50}
             duration={500}
             className={activeLink === "Contact" ? "active-link" : ""}
-            onClick={() => handleLinkClick("Contact")}
+            onClick={() => handleClick("Contact")}
           >
             Contact
           </Link>
@@ -106,7 +104,7 @@ const Navbar = () => {
 
       {/* ----------- MOBILE ---------------*/}
       <div
-        className={`fixed top-0 right-0 w-3/4 h-full bg-[#29A38E] text-gray-300 transform z-50 ${
+        className={`fixed top-0 right-0 w-full h-full bg-[#29A38E] text-gray-300 transform z-50 ${
           navOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform ease-in-out duration-300 md:hidden`}
       >
@@ -118,7 +116,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
               className={activeLink === "Home" ? "active-link" : ""}
-              onClick={() => handleLinkClick("Home")}
+              onClick={() => handleClick("Home")}
             >
               Home
             </Link>
@@ -130,7 +128,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
               className={activeLink === "About" ? "active-link" : ""}
-              onClick={() => handleLinkClick("About")}
+              onClick={() => handleClick("About")}
             >
               About
             </Link>
@@ -142,7 +140,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
               className={activeLink === "Skills" ? "active-link" : ""}
-              onClick={() => handleLinkClick("Skills")}
+              onClick={() => handleClick("Skills")}
             >
               Skills
             </Link>
@@ -154,7 +152,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
               className={activeLink === "Projects" ? "active-link" : ""}
-              onClick={() => handleLinkClick("Projects")}
+              onClick={() => handleClick("Projects")}
             >
               Projects
             </Link>
@@ -166,7 +164,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
               className={activeLink === "Contact" ? "active-link" : ""}
-              onClick={() => handleLinkClick("Contact")}
+              onClick={() => handleClick("Contact")}
             >
               Contact
             </Link>
