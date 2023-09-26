@@ -25,7 +25,7 @@ const Skills = () => {
             Skills
           </p>
           <p className="text-xl mt-3">
-            // These are some of the technologies I've worked wtih
+            • These are some of the technologies I've worked wtih •
           </p>
         </div>
 

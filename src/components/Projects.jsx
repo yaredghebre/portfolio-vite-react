@@ -18,8 +18,8 @@ const Projects = () => {
           <p className="text-4xl font-bold inline border-b-4 border-[#29A38E]">
             Projects
           </p>
-          <p className="text-xl mt-3">
-            // Check out some of my recent projects
+          <p className="text-xl my-3">
+            • Check out some of my recent projects •
           </p>
         </div>
         {/* Grid Container */}

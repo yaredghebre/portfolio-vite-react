@@ -48,7 +48,9 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-[#29A38E] text-gray-300">
             Contact
           </p>
-          <p className="text-gray-300 mt-3 text-xl">// Submit the form below</p>
+          <p className="text-gray-300 mt-3 text-xl">
+            • Submit the form below •
+          </p>
         </div>
         <input className="p-2" type="text" placeholder="Name" name="name" />
         {errors.name && <div className="text-red-500">{errors.name}</div>}
