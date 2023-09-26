@@ -7,10 +7,13 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [activeLink] = useState("");
+  const [activeLink, setActiveLink] = useState("");
   const toggleNav = () => setNavOpen(!navOpen);
 
-  const handleClick = () => setNavOpen(!navOpen);
+  const handleClick = (link) => {
+    setNavOpen(!navOpen);
+    setActiveLink(link);
+  };
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-[20px] bg-gray-700 text-gray-300">
@@ -31,7 +34,9 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
-            className={activeLink === "Home" ? "active-link" : ""}
+            className={
+              activeLink === "Home" ? "active-link" : "hover:text-[#29A38E]"
+            }
             onClick={() => handleClick("Home")}
           >
             Home
@@ -45,7 +50,9 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
-            className={activeLink === "About" ? "active-link" : ""}
+            className={
+              activeLink === "About" ? "active-link" : "hover:text-[#29A38E]"
+            }
             onClick={() => handleClick("About")}
           >
             About
@@ -59,7 +66,9 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
-            className={activeLink === "Skills" ? "active-link" : ""}
+            className={
+              activeLink === "Skills" ? "active-link" : "hover:text-[#29A38E]"
+            }
             onClick={() => handleClick("Skills")}
           >
             Skills
@@ -73,7 +82,9 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
-            className={activeLink === "Projects" ? "active-link" : ""}
+            className={
+              activeLink === "Projects" ? "active-link" : "hover:text-[#29A38E]"
+            }
             onClick={() => handleClick("Projects")}
           >
             Projects
@@ -87,7 +98,9 @@ const Navbar = () => {
             smooth={true}
             offset={50}
             duration={500}
-            className={activeLink === "Contact" ? "active-link" : ""}
+            className={
+              activeLink === "Contact" ? "active-link" : "hover:text-[#29A38E]"
+            }
             onClick={() => handleClick("Contact")}
           >
             Contact
