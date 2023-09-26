@@ -5,6 +5,12 @@ import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
+import Bootstrap from "../assets/bootstrap.png";
+import Laravel from "../assets/laravel.png";
+import Vue from "../assets/vue.png";
+import Mysql from "../assets/mysql.png";
+import VSC from "../assets/vsc.png";
+import PHP from "../assets/php.png";
 
 const Skills = () => {
   return (
@@ -35,6 +41,20 @@ const Skills = () => {
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
+            <img className="w-20 mx-auto" src={Tailwind} alt="Tailwind icon" />
+            <p>Tailwind</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
+            <img
+              className="w-20 mx-auto"
+              src={Bootstrap}
+              alt="Bootstrap icon"
+            />
+            <p>Boostrap</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
             <img className="w-20 mx-auto" src={JavaScript} alt="Js icon" />
             <p>Javascript</p>
           </div>
@@ -45,13 +65,33 @@ const Skills = () => {
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
+            <img className="w-20 mx-auto" src={Vue} alt="Vue icon" />
+            <p>VueJS</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
+            <img className="w-20 mx-auto" src={Laravel} alt="Laravel icon" />
+            <p>Laravel</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
+            <img className="w-20 mx-auto" src={Mysql} alt="Mysql icon" />
+            <p>MySql</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
+            <img className="w-20 mx-auto" src={PHP} alt="PHP icon" />
+            <p>PHP</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
             <img className="w-20 mx-auto" src={GitHub} alt="Github icon" />
             <p>Github</p>
           </div>
 
           <div className="shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-[#29A38E] duration-300">
-            <img className="w-20 mx-auto" src={Tailwind} alt="Tailwind icon" />
-            <p>Tailwind</p>
+            <img className="w-20 mx-auto" src={VSC} alt="VSC icon" />
+            <p>Visual Studio Code</p>
           </div>
         </div>
       </div>
