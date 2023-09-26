@@ -11,7 +11,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-[1000px] w-full px-4 text-center">
+        <div className="max-w-[1080px] w-full px-4 text-center">
           <div>
             <p className="text-2xl py-2">
               I am an Italian Jr. Full Stack Web Developer who, after over ten

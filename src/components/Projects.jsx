@@ -13,15 +13,15 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full md:h-screen text-gray-300 px-4 bg-[#0a192f]"
+      className="w-full h-[1000px] md:h-screen text-gray-300 px-4 bg-[#0a192f]"
     >
       {/* Container */}
-      <div className="max-w-[1080px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1080px] mx-auto flex flex-col justify-center w-full h-full">
         <div className="text-center">
           <p className="text-4xl font-bold inline border-b-4 border-[#29A38E]">
             Projects
           </p>
-          <p className="py-4 text-xl">
+          <p className="text-xl mt-3">
             // Check out some of my recent projects
           </p>
         </div>
@@ -40,7 +40,7 @@ const Projects = () => {
                 Calculator App
               </span>
               <div className="flex gap-2">
-                <a href="">
+                <a href="https://simpleappcalculator.netlify.app/">
                   <button className="text-center rounded-lg p-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -66,7 +66,7 @@ const Projects = () => {
                 Avada Gym (Clone)
               </span>
               <div className="flex gap-2">
-                <a href="">
+                <a href="https://avadagym-clone.netlify.app/">
                   <button className="text-center rounded-lg p-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -92,7 +92,7 @@ const Projects = () => {
                 BoolFlix
               </span>
               <div className="flex gap-2">
-                <a href="">
+                <a href="https://boolflix-yg.netlify.app/">
                   <button className="text-center rounded-lg p-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -118,7 +118,7 @@ const Projects = () => {
                 WhatsApp Web (Clone)
               </span>
               <div className="flex gap-2">
-                <a href="">
+                <a href="https://boolzapp-yg.netlify.app/">
                   <button className="text-center rounded-lg p-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -144,7 +144,7 @@ const Projects = () => {
                 Mine Sweeper
               </span>
               <div className="flex gap-2">
-                <a href="">
+                <a href="https://minesweeper-yg.netlify.app/">
                   <button className="text-center rounded-lg p-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -171,7 +171,7 @@ const Projects = () => {
                 Spotify Web (Clone)
               </span>
               <div className="flex gap-2">
-                <a href="">
+                <a href="https://spotify-clone-yg.netlify.app/">
                   <button className="text-center rounded-lg p-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -198,7 +198,7 @@ const Projects = () => {
                 QuizApp
               </span>
               <div className="flex gap-2">
-                <a href="">
+                <a href="https://quizapp-yg.netlify.app/">
                   <button className="text-center rounded-lg p-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>

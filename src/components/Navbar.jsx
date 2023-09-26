@@ -4,6 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/profile-pic.png";
 import { Link } from "react-scroll";
+import CV from "../assets/YG-CV.png";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -238,6 +239,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="src/assets/YG-CV.png"
+              // src="{CV}"
             >
               CV
               <BsFillPersonLinesFill size={30} />
