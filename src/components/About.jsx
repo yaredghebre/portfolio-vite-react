@@ -10,20 +10,29 @@ const About = () => {
               About
             </p>
           </div>
-          {/* <div></div> */}
         </div>
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold">
-            <p>
-              Hi, I'm Yared, nice to meet you. Go ahead and have a look around!
-            </p>
-          </div>
+        <div className="max-w-[1000px] w-full px-4">
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-              maxime earum, sit ut sed, eaque provident recusandae, temporibus
-              iste molestiae amet nostrum alias error ipsam dolorum! Eos,
-              deserunt amet. Error!
+            <p className="text-2xl py-2">
+              I am an Italian Jr. Full Stack Web Developer who, after over ten
+              years of diverse work experiences in multicultural environments,
+              both in Italy and abroad, has decided to pursue a new career in
+              the field of computer science, driven by a lifelong curiosity and
+              passion for technology.
+            </p>
+
+            <p className="text-2xl py-2">
+              My adaptability, quick learning ability, and strong work ethic
+              have been consistently demonstrated throughout my professional
+              journey.
+            </p>
+
+            <p className="text-2xl py-2">
+              Over the past six months, I have acquired strong web development
+              and problem-solving skills, using various technologies and tools.
+              Now, I'm eager to put them into practice and to contribute
+              significantly to new and exciting projects, while having the
+              chance to thrive and to finally reaching my goals!
             </p>
           </div>
         </div>

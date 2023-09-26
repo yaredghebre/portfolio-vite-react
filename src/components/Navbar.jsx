@@ -121,7 +121,17 @@ const Navbar = () => {
           navOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform ease-in-out duration-300 md:hidden`}
       >
-        <ul className="flex flex-col justify-center items-center h-full">
+        <div className="flex justify-end p-4">
+          <div onClick={toggleNav}>
+            <FaTimes />
+          </div>
+        </div>
+        {/* <ul className="flex flex-col justify-center items-center h-full"> */}
+        <ul
+          className={`md:hidden flex flex-col justify-center items-center h-full ${
+            navOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform ease-in-out duration-300`}
+        >
           <li className="py-6 text-xl text-black hover:text-white">
             <Link
               to="home"
@@ -187,7 +197,12 @@ const Navbar = () => {
       {/* --------------------------------- */}
 
       {/* ---------- LEFT SIDEBAR ---------- */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      {/* <div className="hidden lg:flex fixed flex-col top-[35%] left-0"> */}
+      <div
+        className={`lg:flex fixed flex-col top-[35%] left-0 ${
+          navOpen ? "md:flex" : "hidden"
+        }`}
+      >
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 px-3">
             <a
