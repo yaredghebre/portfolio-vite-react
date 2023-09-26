@@ -43,11 +43,11 @@ const Contact = () => {
         action="https://getform.io/f/26b22da2-c23e-45c5-b471-871a063c829e"
         className="flex flex-col max-w-[600px] w-full"
       >
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-[#29A38E] sm:text-center text-gray-300">
+        <div className="pb-8 text-center">
+          <p className="text-4xl font-bold inline border-b-4 border-[#29A38E] text-gray-300">
             Contact
           </p>
-          <p className="text-gray-300 py-4">// Submit the form below</p>
+          <p className="text-gray-300 py-4 text-xl">// Submit the form below</p>
         </div>
         <input className="p-2" type="text" placeholder="Name" name="name" />
         {errors.name && <div className="text-red-500">{errors.name}</div>}

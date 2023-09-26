@@ -126,7 +126,6 @@ const Navbar = () => {
             <FaTimes />
           </div>
         </div>
-        {/* <ul className="flex flex-col justify-center items-center h-full"> */}
         <ul
           className={`md:hidden flex flex-col justify-center items-center h-full ${
             navOpen ? "translate-x-0" : "translate-x-full"
@@ -197,7 +196,6 @@ const Navbar = () => {
       {/* --------------------------------- */}
 
       {/* ---------- LEFT SIDEBAR ---------- */}
-      {/* <div className="hidden lg:flex fixed flex-col top-[35%] left-0"> */}
       <div
         className={`lg:flex fixed flex-col top-[35%] left-0 ${
           navOpen ? "md:flex" : "hidden"
