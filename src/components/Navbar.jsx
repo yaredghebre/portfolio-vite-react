@@ -120,7 +120,7 @@ const Navbar = () => {
 
       {/* ----------- MOBILE ---------------*/}
       <div
-        className={`fixed top-0 right-0 w-full h-full bg-[#29A38E] text-gray-300 transform z-50 ${
+        className={`fixed top-0 right-0 w-4/6 h-full bg-[#29A38E] text-gray-300 transform z-50 ${
           navOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform ease-in-out duration-300 md:hidden`}
       >
@@ -239,7 +239,6 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="src/assets/YG-CV.png"
-              // src="{CV}"
             >
               CV
               <BsFillPersonLinesFill size={30} />

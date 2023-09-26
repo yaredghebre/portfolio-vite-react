@@ -19,7 +19,7 @@ const Skills = () => {
       className="w-full h-screen bg-[#0a192f] text-gray-300 px-4"
     >
       {/* Container */}
-      <div className="max-w-[1080px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1080px] mx-auto flex flex-col justify-center w-full h-full ">
         <div className="text-center">
           <p className="text-4xl font-bold inline border-b-4 border-[#29A38E]">
             Skills

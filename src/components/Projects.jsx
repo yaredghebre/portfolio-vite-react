@@ -11,12 +11,9 @@ import DeliveBoo from "../assets/projects/DeliveBoo-customerSide.png";
 
 const Projects = () => {
   return (
-    <div
-      name="projects"
-      className="w-full h-[1000px] md:h-screen text-gray-300 px-4 bg-[#0a192f]"
-    >
+    <div name="projects" className="w-full text-gray-300 px-4 bg-[#0a192f]">
       {/* Container */}
-      <div className="max-w-[1080px] mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1080px] mx-auto flex flex-col justify-center w-full">
         <div className="text-center">
           <p className="text-4xl font-bold inline border-b-4 border-[#29A38E]">
             Projects
