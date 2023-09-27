@@ -238,7 +238,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#D0826F] px-3">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/yaredghebre/portfolio-vite-react/blob/main/src/assets/YG-CV.png"
+              href="https://raw.githubusercontent.com/yaredghebre/portfolio-vite-react/main/src/assets/YG-CV.png"
               target="_blank"
             >
               CV
