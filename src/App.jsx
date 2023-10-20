@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div>
+    <div className=" ">
       <Navbar />
       <Home />
       <About />
